@@ -93,7 +93,7 @@ def get_chromedriver(use_proxy=False, user_agent=None):
     chrome_options = Options()
     chrome_options.add_extension(plugin_file)
     chrome_options.add_argument("--window-size=500,500")
-    driver = Chrome("C:\chromedriver.exe", options=chrome_options)
+    driver = Chrome(r"C:\chromedriver.exe", options=chrome_options)
     return driver
 
 
